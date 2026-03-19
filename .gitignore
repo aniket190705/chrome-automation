@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+.env/
+
+# Temp files
+.tmp/
+temp/
+*.log
+
+# Playwright
+playwright-report/
+
+# OS
+.DS_Store
+Thumbs.db

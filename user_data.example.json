@@ -1,0 +1,19 @@
+{
+  "full_name": "Alex Johnson",
+  "first_name": "Alex",
+  "last_name": "Johnson",
+  "email": "alex.johnson@example.com",
+  "phone": "+1-555-111-2222",
+  "address": "123 Main Street",
+  "city": "San Francisco",
+  "state": "CA",
+  "postal_code": "94105",
+  "country": "United States",
+  "linkedin": "https://www.linkedin.com/in/alexjohnson",
+  "website": "https://alexjohnson.dev",
+  "company": "Acme Corp",
+  "role": "Senior AI Engineer",
+  "summary": "Builder of automation systems and applied AI products.",
+  "github": "https://github.com/alexjohnson",
+  "notice_period": "2 weeks"
+}

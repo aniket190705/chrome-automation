@@ -1,0 +1,458 @@
+2026-03-19 00:50:52 | INFO    | Starting agent for URL: https://www.selenium.dev/selenium/web/web-form.html
+2026-03-19 00:52:00 | INFO    | Starting agent for URL: https://www.selenium.dev/selenium/web/web-form.html
+2026-03-19 00:52:03 | INFO    | Loaded URL: https://www.selenium.dev/selenium/web/web-form.html
+2026-03-19 00:52:03 | INFO    | Captured screenshot: debug_screenshots\1773861723475_page_loaded.png
+2026-03-19 00:52:03 | INFO    | Page 1: detected 12 fields
+2026-03-19 00:52:07 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-03-19 00:52:07 | INFO    | Local AI unresolved for field 'Text input Text input' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2026-03-19 00:52:07 | WARNING | [1] No decision for field: Text input Text input
+2026-03-19 00:52:11 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6330>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-03-19 00:52:11 | INFO    | Local AI unresolved for field 'Password Password' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6330>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2026-03-19 00:52:11 | WARNING | [2] No decision for field: Password Password
+2026-03-19 00:52:15 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD66C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-03-19 00:52:15 | INFO    | Local AI unresolved for field 'Textarea Textarea' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD66C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2026-03-19 00:52:15 | WARNING | [3] No decision for field: Textarea Textarea
+2026-03-19 00:52:15 | INFO    | [4] Skip pre-filled field: Readonly input Readonly input
+2026-03-19 00:52:15 | INFO    | [5] Skip pre-filled field: Dropdown (select) Open this select menu One Two Three Dropdown (select) Open this select menu One Two Three
+2026-03-19 00:52:20 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-03-19 00:52:20 | INFO    | Local AI unresolved for field 'Dropdown (datalist) Type to search... Dropdown (datalist)' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2026-03-19 00:52:20 | WARNING | [6] No decision for field: Dropdown (datalist) Type to search... Dropdown (datalist)
+2026-03-19 00:52:20 | INFO    | [7] Skip pre-filled field: Checked checkbox Checked checkbox
+2026-03-19 00:52:24 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6DE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-03-19 00:52:24 | INFO    | Local AI unresolved for field 'Default checkbox Default checkbox' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD6DE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2026-03-19 00:52:24 | WARNING | [8] No decision for field: Default checkbox Default checkbox
+2026-03-19 00:52:24 | INFO    | [9] Skip pre-filled field: Checked radio Checked radio
+2026-03-19 00:52:24 | INFO    | [10] Skip pre-filled field: Color picker Color picker
+2026-03-19 00:52:28 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD7170>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2026-03-19 00:52:28 | INFO    | Local AI unresolved for field 'Date picker Date picker' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FEC0AD7170>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+2026-03-19 00:52:28 | WARNING | [11] No decision for field: Date picker Date picker
+2026-03-19 00:52:28 | INFO    | [12] Skip pre-filled field: Example range Example range
+2026-03-19 00:52:28 | INFO    | Captured screenshot: debug_screenshots\1773861748263_run_complete.png
+2026-03-19 00:52:28 | INFO    | Agent stopped
+2026-03-19 01:09:40 | INFO    | Starting agent for URL: https://www.selenium.dev/selenium/web/web-form.html
+2026-03-19 01:09:44 | INFO    | Loaded URL: https://www.selenium.dev/selenium/web/web-form.html
+2026-03-19 01:09:44 | INFO    | Captured screenshot: debug_screenshots\1773862784537_page_loaded.png
+2026-03-19 01:09:44 | INFO    | Page 1: detected 12 fields
+2026-03-19 01:10:32 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 01:10:32 | INFO    | Local AI unresolved for field 'Text input Text input' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 01:10:32 | WARNING | [1] No decision for field: Text input Text input
+2026-03-19 01:11:19 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 01:11:19 | INFO    | Local AI unresolved for field 'Password Password' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 01:11:19 | WARNING | [2] No decision for field: Password Password
+2026-03-19 01:12:06 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 01:12:06 | INFO    | Local AI unresolved for field 'Textarea Textarea' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 01:12:06 | WARNING | [3] No decision for field: Textarea Textarea
+2026-03-19 01:12:06 | INFO    | [4] Skip pre-filled field: Readonly input Readonly input
+2026-03-19 01:12:06 | INFO    | [5] Skip pre-filled field: Dropdown (select) Open this select menu One Two Three Dropdown (select) Open this select menu One Two Three
+2026-03-19 01:12:53 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 01:12:53 | INFO    | Local AI unresolved for field 'Dropdown (datalist) Type to search... Dropdown (datalist)' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 01:12:53 | WARNING | [6] No decision for field: Dropdown (datalist) Type to search... Dropdown (datalist)
+2026-03-19 01:12:53 | INFO    | [7] Skip pre-filled field: Checked checkbox Checked checkbox
+2026-03-19 01:13:40 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 01:13:40 | INFO    | Local AI unresolved for field 'Default checkbox Default checkbox' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 01:13:40 | WARNING | [8] No decision for field: Default checkbox Default checkbox
+2026-03-19 01:13:40 | INFO    | [9] Skip pre-filled field: Checked radio Checked radio
+2026-03-19 01:13:40 | INFO    | [10] Skip pre-filled field: Color picker Color picker
+2026-03-19 01:14:27 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 01:14:27 | INFO    | Local AI unresolved for field 'Date picker Date picker' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 01:14:27 | WARNING | [11] No decision for field: Date picker Date picker
+2026-03-19 01:14:27 | INFO    | [12] Skip pre-filled field: Example range Example range
+2026-03-19 01:14:28 | INFO    | Captured screenshot: debug_screenshots\1773863067819_run_complete.png
+2026-03-19 01:14:29 | INFO    | Agent stopped
+2026-03-19 01:30:27 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:30:31 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:30:31 | INFO    | Captured screenshot: debug_screenshots\1773864031199_page_loaded.png
+2026-03-19 01:30:31 | INFO    | No fields detected on page 1
+2026-03-19 01:30:31 | INFO    | Captured screenshot: debug_screenshots\1773864031525_run_complete.png
+2026-03-19 01:30:32 | INFO    | Agent stopped
+2026-03-19 01:48:31 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:48:36 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:48:36 | INFO    | Captured screenshot: debug_screenshots\1773865116027_page_loaded.png
+2026-03-19 01:48:36 | INFO    | Page 1: detected 4 fields
+2026-03-19 01:48:44 | WARNING | Action failed on attempt 1 for field Record my email address with my response Record my email address with my response: Locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("[data-ai-agent-id=\"ai-field-1\"]").first
+    - locator resolved to <div id="i5" jsshadow="" tabindex="0" jsname="MPu53c" role="checkbox" aria-checked="false" jscontroller="EcW08c" data-ai-agent-id="ai-field-1" class="uVccjd aiSeRd FXLARc wGQFbe oLlshd" aria-label="Record my email address with my response" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventDefault=true); touchcancel:JMtRjd;">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-19 01:48:44 | INFO    | Captured screenshot: debug_screenshots\1773865124643_action_retry_ai-field-1_1.png
+2026-03-19 01:48:53 | WARNING | Action failed on attempt 2 for field Record my email address with my response Record my email address with my response: Locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("[data-ai-agent-id=\"ai-field-1\"]").first
+    - locator resolved to <div id="i5" jsshadow="" tabindex="0" jsname="MPu53c" role="checkbox" aria-checked="false" jscontroller="EcW08c" data-ai-agent-id="ai-field-1" class="uVccjd aiSeRd FXLARc wGQFbe oLlshd" aria-label="Record my email address with my response" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventDefault=true); touchcancel:JMtRjd;">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-19 01:48:53 | INFO    | Captured screenshot: debug_screenshots\1773865133578_action_retry_ai-field-1_2.png
+2026-03-19 01:49:02 | WARNING | Action failed on attempt 3 for field Record my email address with my response Record my email address with my response: Locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("[data-ai-agent-id=\"ai-field-1\"]").first
+    - locator resolved to <div id="i5" jsshadow="" tabindex="0" jsname="MPu53c" role="checkbox" aria-checked="false" jscontroller="EcW08c" data-ai-agent-id="ai-field-1" class="uVccjd aiSeRd FXLARc wGQFbe oLlshd" aria-label="Record my email address with my response" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventDefault=true); touchcancel:JMtRjd;">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-19 01:49:02 | INFO    | Captured screenshot: debug_screenshots\1773865142784_action_retry_ai-field-1_3.png
+2026-03-19 01:49:03 | INFO    | [1] field='Record my email address with my response Record my email address with my response' kind='checkbox' source='rule' confidence=0.99 action='select' value='alex.johnson@example.com' applied=False
+2026-03-19 01:49:03 | INFO    | Captured screenshot: debug_screenshots\1773865143764_failed_field_ai-field-1.png
+2026-03-19 01:49:03 | INFO    | [2] Skip disabled field: Full Name * Your answer
+2026-03-19 01:49:03 | INFO    | [3] Skip disabled field: Do you require parking at the event? * Do you require parking at the event? *YESNO
+2026-03-19 01:49:03 | INFO    | [4] Skip disabled field: Preferred Time of Arrival * Preferred Time of Arrival *09:00 - 9:30 AM09:30 - 10:00 AM
+2026-03-19 01:49:04 | INFO    | Captured screenshot: debug_screenshots\1773865143928_run_complete.png
+2026-03-19 01:49:04 | INFO    | Agent stopped
+2026-03-19 01:52:01 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:52:06 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:52:06 | INFO    | Captured screenshot: debug_screenshots\1773865326248_page_loaded.png
+2026-03-19 01:52:06 | INFO    | Page 1: detected 4 fields
+2026-03-19 01:52:14 | WARNING | Action failed on attempt 1 for field Record my email address with my response Record my email address with my response: Locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("[data-ai-agent-id=\"ai-field-1\"]").first
+    - locator resolved to <div id="i5" jsshadow="" tabindex="0" jsname="MPu53c" role="checkbox" aria-checked="false" jscontroller="EcW08c" data-ai-agent-id="ai-field-1" class="uVccjd aiSeRd FXLARc wGQFbe oLlshd" aria-label="Record my email address with my response" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventDefault=true); touchcancel:JMtRjd;">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-19 01:52:14 | INFO    | Captured screenshot: debug_screenshots\1773865334751_action_retry_ai-field-1_1.png
+2026-03-19 01:52:23 | WARNING | Action failed on attempt 2 for field Record my email address with my response Record my email address with my response: Locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("[data-ai-agent-id=\"ai-field-1\"]").first
+    - locator resolved to <div id="i5" jsshadow="" tabindex="0" jsname="MPu53c" role="checkbox" aria-checked="false" jscontroller="EcW08c" data-ai-agent-id="ai-field-1" class="uVccjd aiSeRd FXLARc wGQFbe oLlshd" aria-label="Record my email address with my response" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventDefault=true); touchcancel:JMtRjd;">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-19 01:52:23 | INFO    | Captured screenshot: debug_screenshots\1773865343652_action_retry_ai-field-1_2.png
+2026-03-19 01:52:32 | WARNING | Action failed on attempt 3 for field Record my email address with my response Record my email address with my response: Locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("[data-ai-agent-id=\"ai-field-1\"]").first
+    - locator resolved to <div id="i5" jsshadow="" tabindex="0" jsname="MPu53c" role="checkbox" aria-checked="false" jscontroller="EcW08c" data-ai-agent-id="ai-field-1" class="uVccjd aiSeRd FXLARc wGQFbe oLlshd" aria-label="Record my email address with my response" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventDefault=true); touchcancel:JMtRjd;">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="mjANdc eEPege">…</div> from <div isfullscreen="false" class="llhEMd iWO5td" jsaction="JIbuQc:.CLIENT;mousedown:.CLIENT;touchstart:.CLIENT">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-19 01:52:32 | INFO    | Captured screenshot: debug_screenshots\1773865352758_action_retry_ai-field-1_3.png
+2026-03-19 01:52:33 | INFO    | [1] field='Record my email address with my response Record my email address with my response' kind='checkbox' source='rule' confidence=0.99 action='select' value='alex.johnson@example.com' applied=False
+2026-03-19 01:52:33 | INFO    | Captured screenshot: debug_screenshots\1773865353482_failed_field_ai-field-1.png
+2026-03-19 01:52:33 | INFO    | [2] Skip disabled field: Full Name * Your answer
+2026-03-19 01:52:33 | INFO    | [3] Skip disabled field: Do you require parking at the event? * Do you require parking at the event? *YESNO
+2026-03-19 01:52:33 | INFO    | [4] Skip disabled field: Preferred Time of Arrival * Preferred Time of Arrival *09:00 - 9:30 AM09:30 - 10:00 AM
+2026-03-19 01:52:33 | INFO    | Captured screenshot: debug_screenshots\1773865353579_run_complete.png
+2026-03-19 01:52:33 | INFO    | Agent stopped
+2026-03-19 01:54:06 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:54:08 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 01:54:09 | INFO    | Captured screenshot: debug_screenshots\1773865448877_page_loaded.png
+2026-03-19 01:54:09 | INFO    | Page 1: detected 4 fields
+2026-03-19 01:54:18 | INFO    | [1] field='Record my email address with my response Record my email address with my response' kind='checkbox' source='rule' confidence=0.99 action='select' value='alex.johnson@example.com' applied=True
+2026-03-19 01:54:18 | INFO    | [2] Skip disabled field: Full Name * Your answer
+2026-03-19 01:54:18 | INFO    | [3] Skip disabled field: Do you require parking at the event? * Do you require parking at the event? *YESNO
+2026-03-19 01:54:18 | INFO    | [4] Skip disabled field: Preferred Time of Arrival * Preferred Time of Arrival *09:00 - 9:30 AM09:30 - 10:00 AM
+2026-03-19 01:54:18 | INFO    | Captured screenshot: debug_screenshots\1773865458062_run_complete.png
+2026-03-19 01:54:18 | INFO    | Agent stopped
+2026-03-19 10:29:40 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:30:01 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:30:01 | INFO    | Captured screenshot: debug_screenshots\1773896401442_page_loaded.png
+2026-03-19 10:30:02 | WARNING | Sign-in gate detected on form page
+2026-03-19 10:30:02 | ERROR   | Cannot complete manual login in headless mode. Use headed mode with --profile-dir to save session.
+2026-03-19 10:30:02 | ERROR   | Form is locked behind sign-in. Aborting fill run.
+2026-03-19 10:30:02 | INFO    | Captured screenshot: debug_screenshots\1773896402012_auth_required.png
+2026-03-19 10:30:02 | INFO    | Captured screenshot: debug_screenshots\1773896402266_run_complete.png
+2026-03-19 10:30:02 | INFO    | Agent stopped
+2026-03-19 10:32:45 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:32:49 | INFO    | Using persistent browser profile: C:\Users\acer\Desktop\chrome automation\.playwright_profile
+2026-03-19 10:32:51 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:32:52 | INFO    | Captured screenshot: debug_screenshots\1773896571792_page_loaded.png
+2026-03-19 10:32:52 | WARNING | Sign-in gate detected on form page
+2026-03-19 10:33:00 | INFO    | Clicked sign-in trigger: text=SIGN IN
+2026-03-19 10:33:01 | INFO    | Sign-in gate cleared, continuing automation
+2026-03-19 10:33:01 | INFO    | Page 1: detected 2 fields
+2026-03-19 10:33:02 | INFO    | [1] field='Email or phone Email or phone' kind='email' source='rule' confidence=0.99 action='fill' value='alex.johnson@example.com' applied=True
+2026-03-19 10:33:04 | INFO    | [2] field='English (United States) English (United States)' kind='select' source='rule' confidence=0.99 action='select' value='CA' applied=True
+2026-03-19 10:33:04 | INFO    | Captured screenshot: debug_screenshots\1773896584463_run_complete.png
+2026-03-19 10:33:06 | INFO    | Agent stopped
+2026-03-19 10:33:58 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:34:01 | INFO    | Using persistent browser profile: C:\Users\acer\Desktop\chrome automation\.playwright_profile
+2026-03-19 10:34:03 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:34:04 | INFO    | Captured screenshot: debug_screenshots\1773896643552_page_loaded.png
+2026-03-19 10:34:04 | WARNING | Sign-in gate detected on form page
+2026-03-19 10:34:12 | INFO    | Clicked sign-in trigger: text=SIGN IN
+2026-03-19 10:34:15 | INFO    | Sign-in gate cleared, continuing automation
+2026-03-19 10:34:15 | INFO    | No fields detected on page 1
+2026-03-19 10:34:16 | INFO    | Captured screenshot: debug_screenshots\1773896655650_run_complete.png
+2026-03-19 10:34:18 | INFO    | Agent stopped
+2026-03-19 10:36:52 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:36:53 | INFO    | Using persistent browser profile: C:\Users\acer\Desktop\chrome automation\.playwright_profile
+2026-03-19 10:36:55 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:36:56 | INFO    | Captured screenshot: debug_screenshots\1773896815917_page_loaded.png
+2026-03-19 10:36:56 | WARNING | Sign-in gate detected on form page
+2026-03-19 10:37:04 | INFO    | Clicked sign-in trigger: text=SIGN IN
+2026-03-19 10:37:30 | ERROR   | Timed out waiting for sign-in completion
+2026-03-19 10:37:30 | ERROR   | Form is locked behind sign-in. Aborting fill run.
+2026-03-19 10:37:30 | INFO    | Captured screenshot: debug_screenshots\1773896850230_auth_required.png
+2026-03-19 10:37:30 | INFO    | Captured screenshot: debug_screenshots\1773896850298_run_complete.png
+2026-03-19 10:37:31 | INFO    | Agent stopped
+2026-03-19 10:39:59 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:40:03 | INFO    | Using persistent browser profile: C:\Users\acer\Desktop\chrome automation\.playwright_profile
+2026-03-19 10:40:05 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:40:06 | INFO    | Captured screenshot: debug_screenshots\1773897005751_page_loaded.png
+2026-03-19 10:40:06 | WARNING | Sign-in gate detected on form page
+2026-03-19 10:40:14 | INFO    | Clicked sign-in trigger: text=SIGN IN
+2026-03-19 10:43:38 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:44:44 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:46:05 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:46:07 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 10:46:09 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 10:46:11 | INFO    | Captured screenshot: debug_screenshots\1773897369953_page_loaded.png
+2026-03-19 10:46:11 | WARNING | Sign-in gate detected on form page
+2026-03-19 10:46:20 | INFO    | Clicked sign-in trigger: text=SIGN IN
+2026-03-19 10:46:32 | INFO    | Sign-in gate cleared, continuing automation
+2026-03-19 10:46:32 | INFO    | Page 1: detected 4 fields
+2026-03-19 10:46:33 | INFO    | [1] field='Record aniket190705@gmail.com as the email to be included with my response Record aniket190705@gmail.com as the email to' kind='checkbox' source='rule' confidence=0.99 action='select' value='alex.johnson@example.com' applied=True
+2026-03-19 10:46:34 | INFO    | [2] field='Full Name * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Alex Johnson' applied=True
+2026-03-19 10:47:21 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 10:47:21 | INFO    | Local AI unresolved for field 'Do you require parking at the event? * Do you require parking at the event? *YESNO' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 10:47:21 | WARNING | [3] No decision for field: Do you require parking at the event? * Do you require parking at the event? *YESNO
+2026-03-19 10:48:09 | WARNING | Local Ollama request failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45)
+2026-03-19 10:48:09 | INFO    | Local AI unresolved for field 'Preferred Time of Arrival * Preferred Time of Arrival *09:00 - 9:30 AM09:30 - 10:00 AM' (valid=False confidence=0.00 reason=HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=45))
+2026-03-19 10:48:09 | WARNING | [4] No decision for field: Preferred Time of Arrival * Preferred Time of Arrival *09:00 - 9:30 AM09:30 - 10:00 AM
+2026-03-19 10:48:17 | WARNING | Skipping screenshot 'run_complete': Page.screenshot: Timeout 8000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+2026-03-19 10:48:17 | INFO    | Agent stopped
+2026-03-19 11:09:40 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 11:09:42 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 11:09:45 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScsoaHkZ9NhEEzWUN6oCB3J_Giv2kjCAqfGxildsUUfiBXq6A/viewform
+2026-03-19 11:09:46 | INFO    | Captured screenshot: debug_screenshots\1773898785207_page_loaded.png
+2026-03-19 11:09:46 | INFO    | Page 1: detected 4 fields
+2026-03-19 11:09:46 | INFO    | [1] Skip pre-filled field: Record aniket190705@gmail.com as the email to be included with my response Record aniket190705@gmail.com as the email to be included with my response
+2026-03-19 11:09:46 | INFO    | [2] Skip pre-filled field: Full Name * Your answer
+2026-03-19 11:11:28 | INFO    | Local AI unresolved for field 'Do you require parking at the event? * Do you require parking at the event? *YESNO' (valid=True confidence=0.50 reason=)
+2026-03-19 11:11:28 | INFO    | Fallback AI unresolved for field 'Do you require parking at the event? * Do you require parking at the event? *YESNO' (reason=Missing env var GEMINI_API_KEY)
+2026-03-19 11:11:30 | INFO    | [3] field='Do you require parking at the event? * Do you require parking at the event? *YESNO' kind='radio' source='local_ai' confidence=0.50 action='select' value='YES' applied=True
+2026-03-19 11:12:28 | INFO    | [4] field='Preferred Time of Arrival * Preferred Time of Arrival *09:00 - 9:30 AM09:30 - 10:00 AM' kind='radio' source='local_ai' confidence=0.80 action='select' value='09:30 - 10:00 AM' applied=True
+2026-03-19 11:12:32 | INFO    | Captured screenshot: debug_screenshots\1773898948865_run_complete.png
+2026-03-19 11:12:32 | INFO    | Agent stopped
+2026-03-19 11:24:03 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSfIFmPAnGSQ_AY2aMpZlBNY2euffzqDHlMrZFh_LYWppIqwNA/viewform
+2026-03-19 11:24:06 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 11:24:08 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSfIFmPAnGSQ_AY2aMpZlBNY2euffzqDHlMrZFh_LYWppIqwNA/viewform
+2026-03-19 11:24:10 | INFO    | Captured screenshot: debug_screenshots\1773899648481_page_loaded.png
+2026-03-19 11:24:10 | INFO    | Page 1: detected 8 fields
+2026-03-19 11:24:11 | INFO    | [1] field='Name * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Alex Johnson' applied=True
+2026-03-19 11:25:46 | INFO    | [2] field='USN * Your answer' kind='text' source='local_ai' confidence=1.00 action='fill' value='USN123456' applied=True
+2026-03-19 11:27:41 | INFO    | [3] field='Department * Department *CSEISEECEEEEMECHCIVILAeronautical EngineeringAI&DSAI&MLCSE (AI&ML)M.Tech Structural Engineering' kind='radio' source='local_ai' confidence=0.80 action='select' value='CSE (AI&ML)' applied=True
+2026-03-19 11:28:40 | INFO    | [4] field='Semester * Semester *I SemII SemIII SemIV SemV SemVI SemVII SemVIII Sem' kind='radio' source='local_ai' confidence=1.00 action='select' value='I Sem' applied=True
+2026-03-19 11:29:20 | INFO    | [5] field='The Objectives of the awareness program were clearly explained * The Objectives of the awareness program were clearly ex' kind='radio' source='local_ai' confidence=1.00 action='select' value='Yes' applied=True
+2026-03-19 11:29:58 | INFO    | [6] field='The demonstration of library facilities was useful * The demonstration of library facilities was useful *YesNo' kind='radio' source='local_ai' confidence=1.00 action='select' value='Yes' applied=True
+2026-03-19 11:30:36 | INFO    | [7] field='Would you recommend such programs in future? * Would you recommend such programs in future? *YesNo' kind='radio' source='local_ai' confidence=0.80 action='select' value='Yes' applied=True
+2026-03-19 11:30:37 | INFO    | [8] field='Overall, how would you rate the Library Orientation Program? * Overall, how would you rate the Library Orientation Progr' kind='radio' source='rule' confidence=0.99 action='select' value='+1-555-111-2222' applied=True
+2026-03-19 11:30:38 | INFO    | Captured screenshot: debug_screenshots\1773900037630_run_complete.png
+2026-03-19 11:30:38 | INFO    | Agent stopped
+2026-03-19 11:37:04 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 11:37:06 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 11:37:09 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 11:37:10 | INFO    | Captured screenshot: debug_screenshots\1773900429180_page_loaded.png
+2026-03-19 11:37:10 | INFO    | Page 1: detected 7 fields
+2026-03-19 11:39:02 | INFO    | [1] field='What does HTML stand for? * What does HTML stand for? *Hyperlinks and Text Markup LanguageHyper Text Markup LanguageHome' kind='radio' source='local_ai' confidence=1.00 action='select' value='Hyper Text Markup Language' applied=True
+2026-03-19 11:40:19 | INFO    | [2] field='Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<' kind='radio' source='local_ai' confidence=1.00 action='select' value='<h1>' applied=True
+2026-03-19 11:41:26 | INFO    | [3] field='What is the correct HTML character for indicating an end tag? * What is the correct HTML character for indicating an end' kind='radio' source='local_ai' confidence=1.00 action='select' value='/' applied=True
+2026-03-19 11:41:27 | INFO    | [4] field='How do you create a hyperlink in HTML? * How do you create a hyperlink in HTML? *<a href='http://www.google.com'>Google<' kind='radio' source='rule' confidence=0.99 action='select' value='https://alexjohnson.dev' applied=True
+2026-03-19 11:42:48 | INFO    | [5] field='Which of these elements are all <table> elements? * Which of these elements are all <table> elements? *<table> <head> <t' kind='radio' source='local_ai' confidence=1.00 action='select' value='<table> <tr> <td>' applied=True
+2026-03-19 11:43:52 | INFO    | [6] field='Which attribute is used to provide an alternative text for an image? * Which attribute is used to provide an alternative' kind='radio' source='local_ai' confidence=1.00 action='select' value='alt' applied=True
+2026-03-19 11:44:58 | INFO    | [7] field='Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><foo' kind='radio' source='local_ai' confidence=1.00 action='select' value='<footer>' applied=True
+2026-03-19 11:44:58 | INFO    | Captured screenshot: debug_screenshots\1773900898272_run_complete.png
+2026-03-19 11:44:58 | INFO    | Agent stopped
+2026-03-19 19:57:53 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 19:58:05 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 19:58:08 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 19:58:08 | INFO    | Captured screenshot: debug_screenshots\1773930488068_page_loaded.png
+2026-03-19 19:58:08 | INFO    | Page 1: detected 7 fields
+2026-03-19 19:58:08 | INFO    | [1] Skip pre-filled field: What does HTML stand for? * What does HTML stand for? *Hyperlinks and Text Markup LanguageHyper Text Markup LanguageHome Tool Markup LanguageHyperlinking Text Marking Language
+2026-03-19 19:58:08 | INFO    | [2] Skip pre-filled field: Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<heading><h6><h1><head>
+2026-03-19 19:58:08 | INFO    | [3] Skip pre-filled field: What is the correct HTML character for indicating an end tag? * What is the correct HTML character for indicating an end tag? *<^*/
+2026-03-19 19:58:09 | INFO    | [4] Skip pre-filled field: How do you create a hyperlink in HTML? * How do you create a hyperlink in HTML? *<a href='http://www.google.com'>Google</a><a>http://www.google.com</a><a url='http://www.google.com'>Google</a><link>http://www.google.com</link>
+2026-03-19 19:58:09 | INFO    | [5] Skip pre-filled field: Which of these elements are all <table> elements? * Which of these elements are all <table> elements? *<table> <head> <tfoot><table> <tr> <td><thead> <body> <tr><table> <tr> <tt>
+2026-03-19 19:58:09 | INFO    | [6] Skip pre-filled field: Which attribute is used to provide an alternative text for an image? * Which attribute is used to provide an alternative text for an image? *srctitlealtcaption
+2026-03-19 19:58:09 | INFO    | [7] Skip pre-filled field: Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><footer><foot>
+2026-03-19 19:58:09 | INFO    | Captured screenshot: debug_screenshots\1773930489030_run_complete.png
+2026-03-19 19:58:09 | INFO    | Agent stopped
+2026-03-19 19:59:13 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 19:59:15 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 19:59:17 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 19:59:18 | INFO    | Captured screenshot: debug_screenshots\1773930557485_page_loaded.png
+2026-03-19 19:59:18 | INFO    | Page 1: detected 7 fields
+2026-03-19 19:59:18 | WARNING | Gemini fallback request failed: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 19:59:18 | INFO    | Primary API unresolved for field 'What does HTML stand for? * What does HTML stand for? *Hyperlinks and Text Markup LanguageHyper Text Markup LanguageHome Tool Markup LanguageHyperlinking Text Marking Language' (valid=False confidence=0.00 reason=404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:00:53 | INFO    | [1] field='What does HTML stand for? * What does HTML stand for? *Hyperlinks and Text Markup LanguageHyper Text Markup LanguageHome' kind='radio' source='local_ai' confidence=1.00 action='select' value='Hyper Text Markup Language' applied=True
+2026-03-19 20:00:53 | WARNING | Gemini fallback request failed: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 20:00:53 | INFO    | Primary API unresolved for field 'Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<heading><h6><h1><head>' (valid=False confidence=0.00 reason=404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:02:01 | INFO    | [2] field='Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<' kind='radio' source='local_ai' confidence=1.00 action='select' value='<h1>' applied=True
+2026-03-19 20:02:01 | WARNING | Gemini fallback request failed: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 20:02:01 | INFO    | Primary API unresolved for field 'What is the correct HTML character for indicating an end tag? * What is the correct HTML character for indicating an end tag? *<^*/' (valid=False confidence=0.00 reason=404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:02:43 | INFO    | [3] field='What is the correct HTML character for indicating an end tag? * What is the correct HTML character for indicating an end' kind='radio' source='local_ai' confidence=1.00 action='select' value='/' applied=True
+2026-03-19 20:02:45 | INFO    | [4] field='How do you create a hyperlink in HTML? * How do you create a hyperlink in HTML? *<a href='http://www.google.com'>Google<' kind='radio' source='rule' confidence=0.99 action='select' value='https://alexjohnson.dev' applied=True
+2026-03-19 20:02:45 | WARNING | Gemini fallback request failed: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 20:02:45 | INFO    | Primary API unresolved for field 'Which of these elements are all <table> elements? * Which of these elements are all <table> elements? *<table> <head> <tfoot><table> <tr> <td><thead> <body> <tr><table> <tr> <tt>' (valid=False confidence=0.00 reason=404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:03:37 | INFO    | [5] field='Which of these elements are all <table> elements? * Which of these elements are all <table> elements? *<table> <head> <t' kind='radio' source='local_ai' confidence=1.00 action='select' value='<table> <tr> <td>' applied=True
+2026-03-19 20:03:37 | WARNING | Gemini fallback request failed: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 20:03:37 | INFO    | Primary API unresolved for field 'Which attribute is used to provide an alternative text for an image? * Which attribute is used to provide an alternative text for an image? *srctitlealtcaption' (valid=False confidence=0.00 reason=404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:04:18 | INFO    | [6] field='Which attribute is used to provide an alternative text for an image? * Which attribute is used to provide an alternative' kind='radio' source='local_ai' confidence=1.00 action='select' value='alt' applied=True
+2026-03-19 20:04:18 | WARNING | Gemini fallback request failed: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 20:04:18 | INFO    | Primary API unresolved for field 'Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><footer><foot>' (valid=False confidence=0.00 reason=404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:04:59 | INFO    | [7] field='Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><foo' kind='radio' source='local_ai' confidence=1.00 action='select' value='<footer>' applied=True
+2026-03-19 20:05:01 | INFO    | Captured screenshot: debug_screenshots\1773930899039_run_complete.png
+2026-03-19 20:05:01 | INFO    | Agent stopped
+2026-03-19 20:07:37 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 20:07:39 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 20:07:42 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 20:07:43 | INFO    | Captured screenshot: debug_screenshots\1773931062094_page_loaded.png
+2026-03-19 20:07:43 | INFO    | Page 1: detected 7 fields
+2026-03-19 20:07:43 | INFO    | [1] Skip pre-filled field: What does HTML stand for? * What does HTML stand for? *Hyperlinks and Text Markup LanguageHyper Text Markup LanguageHome Tool Markup LanguageHyperlinking Text Marking Language
+2026-03-19 20:07:43 | INFO    | [2] Skip pre-filled field: Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<heading><h6><h1><head>
+2026-03-19 20:07:43 | INFO    | [3] Skip pre-filled field: What is the correct HTML character for indicating an end tag? * What is the correct HTML character for indicating an end tag? *<^*/
+2026-03-19 20:07:43 | INFO    | [4] Skip pre-filled field: How do you create a hyperlink in HTML? * How do you create a hyperlink in HTML? *<a href='http://www.google.com'>Google</a><a>http://www.google.com</a><a url='http://www.google.com'>Google</a><link>http://www.google.com</link>
+2026-03-19 20:07:43 | INFO    | [5] Skip pre-filled field: Which of these elements are all <table> elements? * Which of these elements are all <table> elements? *<table> <head> <tfoot><table> <tr> <td><thead> <body> <tr><table> <tr> <tt>
+2026-03-19 20:07:43 | INFO    | [6] Skip pre-filled field: Which attribute is used to provide an alternative text for an image? * Which attribute is used to provide an alternative text for an image? *srctitlealtcaption
+2026-03-19 20:07:43 | INFO    | [7] Skip pre-filled field: Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><footer><foot>
+2026-03-19 20:07:43 | INFO    | Captured screenshot: debug_screenshots\1773931063124_run_complete.png
+2026-03-19 20:07:43 | INFO    | Agent stopped
+2026-03-19 20:12:11 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 20:12:55 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 20:12:56 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-03-19 20:12:58 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSdbt4cwIDijFxkjOcTYMRMY0o2yythUkkrTyr3sm1FLj0riUw/viewform
+2026-03-19 20:12:59 | INFO    | Captured screenshot: debug_screenshots\1773931378533_page_loaded.png
+2026-03-19 20:12:59 | INFO    | Page 1: detected 7 fields
+2026-03-19 20:13:02 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-03-19 20:13:02 | INFO    | [1] field='What does HTML stand for? * What does HTML stand for? *Hyperlinks and Text Markup LanguageHyper Text Markup LanguageHome' kind='radio' source='fallback_ai' confidence=1.00 action='select' value='Hyper Text Markup Language' applied=True
+2026-03-19 20:13:03 | WARNING | Gemini fallback request failed (gemini-2.5-flash): 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-03-19 20:13:03 | INFO    | Primary API unresolved for field 'Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<heading><h6><h1><head>' (valid=False confidence=0.00 reason=503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-03-19 20:14:36 | INFO    | [2] field='Which HTML element is used to define the largest heading? * Which HTML element is used to define the largest heading? *<' kind='radio' source='local_ai' confidence=1.00 action='select' value='<h1>' applied=True
+2026-03-19 20:14:39 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-03-19 20:14:40 | INFO    | [3] field='What is the correct HTML character for indicating an end tag? * What is the correct HTML character for indicating an end' kind='radio' source='fallback_ai' confidence=1.00 action='select' value='/' applied=True
+2026-03-19 20:14:43 | INFO    | [4] field='How do you create a hyperlink in HTML? * How do you create a hyperlink in HTML? *<a href='http://www.google.com'>Google<' kind='radio' source='rule' confidence=0.99 action='select' value='https://alexjohnson.dev' applied=True
+2026-03-19 20:14:46 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-03-19 20:14:49 | INFO    | [5] field='Which of these elements are all <table> elements? * Which of these elements are all <table> elements? *<table> <head> <t' kind='radio' source='fallback_ai' confidence=1.00 action='select' value='<table> <tr> <td>' applied=True
+2026-03-19 20:14:52 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-03-19 20:14:53 | INFO    | [6] field='Which attribute is used to provide an alternative text for an image? * Which attribute is used to provide an alternative' kind='radio' source='fallback_ai' confidence=1.00 action='select' value='alt' applied=True
+2026-03-19 20:14:55 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-03-19 20:14:56 | INFO    | [7] field='Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><foo' kind='radio' source='fallback_ai' confidence=1.00 action='select' value='<footer>' applied=True
+2026-03-19 20:14:57 | INFO    | Captured screenshot: debug_screenshots\1773931497020_run_complete.png
+2026-03-19 20:14:57 | INFO    | Agent stopped
