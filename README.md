@@ -1,4 +1,4 @@
-# Ai-Form-Agent
+# AI Form Agent
 
 Production-ready form automation agent with a 3-layer decision architecture:
 
@@ -27,6 +27,42 @@ python -m venv .venv
 
 pip install -r requirements.txt
 python -m playwright install chromium
+```
+
+## Run Locally
+
+1. Clone the repo and open it in a terminal.
+2. Create and activate a virtual environment.
+3. Install Python dependencies and Playwright browsers.
+4. Copy [`.env.example`](/C:/Users/acer/Desktop/chrome%20automation/.env.example) to `.env` and add your real API keys.
+5. Copy [`user_data.example.json`](/C:/Users/acer/Desktop/chrome%20automation/user_data.example.json) to `user_data.json` and replace the sample profile values with your own data.
+6. Start Ollama and make sure the configured model is available.
+7. If you want to automate Google Forms or any sign-in-required site, launch Chrome with remote debugging enabled and sign in once.
+8. Run the agent with the target form URL.
+
+Example local setup flow on Windows:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python -m playwright install chromium
+copy .env.example .env
+copy user_data.example.json user_data.json
+ollama pull llama3.1:8b
+ollama serve
+```
+
+Chrome remote-debug command for login-required forms:
+
+```powershell
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\Users\<you>\AppData\Local\Google\Chrome\User Data" --profile-directory="Default"
+```
+
+Example run:
+
+```powershell
+python main.py --url "https://example.com/form" --user-data "user_data.json"
 ```
 
 ## Ollama
@@ -126,4 +162,3 @@ These can be placed in `.env` or exported in the OS environment:
 - Debug screenshots are stored in `debug_screenshots/`.
 - Run logs are written to `agent.log`.
 - The agent avoids hardcoded selectors and uses dynamic element metadata.
-# chrome-automation
