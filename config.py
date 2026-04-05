@@ -26,6 +26,14 @@ class UserProfile:
     company: str = ""
     role: str = ""
     summary: str = ""
+    college_name: str = ""
+    university_name: str = ""
+    degree: str = ""
+    specialization: str = ""
+    degree_specialization: str = ""
+    graduation_score: str = ""
+    post_graduation_score: str = ""
+    active_backlogs: str = ""
     custom_fields: Dict[str, str] = field(default_factory=dict)
 
     def as_prompt_dict(self) -> Dict[str, str]:
@@ -45,6 +53,14 @@ class UserProfile:
             "company": self.company,
             "role": self.role,
             "summary": self.summary,
+            "college_name": self.college_name,
+            "university_name": self.university_name,
+            "degree": self.degree,
+            "specialization": self.specialization,
+            "degree_specialization": self.degree_specialization,
+            "graduation_score": self.graduation_score,
+            "post_graduation_score": self.post_graduation_score,
+            "active_backlogs": self.active_backlogs,
         }
         data.update(self.custom_fields)
         return {k: v for k, v in data.items() if isinstance(v, str) and v.strip()}
@@ -136,6 +152,14 @@ def load_user_profile(path: str) -> UserProfile:
         "company",
         "role",
         "summary",
+        "college_name",
+        "university_name",
+        "degree",
+        "specialization",
+        "degree_specialization",
+        "graduation_score",
+        "post_graduation_score",
+        "active_backlogs",
     }
     custom = {k: str(v) for k, v in raw.items() if k not in reserved and v is not None}
 
@@ -155,6 +179,14 @@ def load_user_profile(path: str) -> UserProfile:
         company=_coerce_str(raw, "company"),
         role=_coerce_str(raw, "role"),
         summary=_coerce_str(raw, "summary"),
+        college_name=_coerce_str(raw, "college_name"),
+        university_name=_coerce_str(raw, "university_name"),
+        degree=_coerce_str(raw, "degree"),
+        specialization=_coerce_str(raw, "specialization"),
+        degree_specialization=_coerce_str(raw, "degree_specialization"),
+        graduation_score=_coerce_str(raw, "graduation_score"),
+        post_graduation_score=_coerce_str(raw, "post_graduation_score"),
+        active_backlogs=_coerce_str(raw, "active_backlogs"),
         custom_fields=custom,
     )
 

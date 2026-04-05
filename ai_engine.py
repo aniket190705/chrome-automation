@@ -28,22 +28,29 @@ class Decision:
 class RuleBasedEngine:
     def __init__(self, profile: UserProfile) -> None:
         self.profile = profile
-        self.rules = {
-            "email": ["email", "e-mail", "mail id"],
-            "phone": ["phone", "mobile", "telephone", "contact number", "cell"],
-            "full_name": ["full name", "your name", "applicant name", "name"],
-            "first_name": ["first name", "given name"],
-            "last_name": ["last name", "surname", "family name"],
-            "address": ["address", "street"],
-            "city": ["city", "town"],
-            "state": ["state", "province", "region"],
-            "postal_code": ["zip", "postal", "pin code", "postcode"],
-            "country": ["country", "nation"],
-            "linkedin": ["linkedin", "linked in"],
-            "website": ["website", "portfolio", "site", "url"],
-            "company": ["company", "organization", "employer"],
-            "role": ["current role", "job title", "designation", "position"],
-        }
+        self.rules = [
+            ("email", ["email", "e-mail", "mail id"]),
+            ("phone", ["phone", "mobile", "telephone", "contact number", "cell"]),
+            ("college_name", ["college/university", "college or university", "college", "university", "school name"]),
+            ("degree_specialization", ["degree and area of specialization", "degree & area of specialization", "degree - specialization"]),
+            ("specialization", ["specialization", "specialisation", "major", "stream"]),
+            ("degree", ["degree", "qualification", "course"]),
+            ("graduation_score", ["graduation percentage", "graduation cgpa", "cgpa (out of 10)", "percentage or cgpa", "graduation score"]),
+            ("post_graduation_score", ["post graduation percentage", "post graduation cgpa", "post-graduation percentage", "post graduation score"]),
+            ("active_backlogs", ["active backlogs", "current backlogs", "any backlogs", "standing arrears"]),
+            ("linkedin", ["linkedin", "linked in"]),
+            ("website", ["website", "portfolio", "site", "url"]),
+            ("company", ["company", "organization", "employer"]),
+            ("role", ["current role", "job title", "designation", "position"]),
+            ("first_name", ["first name", "given name"]),
+            ("last_name", ["last name", "surname", "family name"]),
+            ("full_name", ["full name", "your name", "applicant name", "first and last name"]),
+            ("address", ["address", "street"]),
+            ("city", ["city", "town"]),
+            ("state", ["state", "province", "region"]),
+            ("postal_code", ["zip", "postal", "pin code", "postcode"]),
+            ("country", ["country", "nation"]),
+        ]
 
     def resolve(self, field: FieldMetadata) -> Optional[Decision]:
         text_blob = " ".join(
@@ -59,7 +66,18 @@ class RuleBasedEngine:
         if not text_blob:
             return None
 
-        for key, keywords in self.rules.items():
+        if self._is_plain_name_field(text_blob):
+            value = self._value_for_key("full_name")
+            if value:
+                return Decision(
+                    action="fill" if field.kind not in {"radio", "checkbox", "select"} else "select",
+                    value=value,
+                    confidence=0.99,
+                    source="rule",
+                    reason="Matched plain person-name field",
+                )
+
+        for key, keywords in self.rules:
             if any(keyword in text_blob for keyword in keywords):
                 value = self._value_for_key(key)
                 if value:
@@ -81,9 +99,53 @@ class RuleBasedEngine:
             )
         return None
 
+    @staticmethod
+    def _normalize_text(value: str) -> str:
+        return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+
+    def _is_plain_name_field(self, text_blob: str) -> bool:
+        normalized = self._normalize_text(text_blob)
+        if "name" not in normalized.split():
+            return False
+        blocked_terms = {
+            "college",
+            "university",
+            "school",
+            "company",
+            "organization",
+            "organisation",
+            "degree",
+            "specialization",
+            "specialisation",
+            "father",
+            "mother",
+            "guardian",
+            "reference",
+            "linkedin",
+            "project",
+        }
+        if any(term in normalized.split() for term in blocked_terms):
+            return False
+        allowed_phrases = {
+            "name",
+            "your name",
+            "full name",
+            "applicant name",
+            "candidate name",
+            "first and last name",
+        }
+        return any(phrase in normalized for phrase in allowed_phrases)
+
     def _custom_match(self, text_blob: str) -> str:
+        normalized_blob = self._normalize_text(text_blob)
         for key, value in self.profile.custom_fields.items():
-            if key.lower().replace("_", " ") in text_blob and value.strip():
+            normalized_key = self._normalize_text(key.replace("_", " "))
+            key_tokens = [token for token in normalized_key.split() if token]
+            if not value.strip():
+                continue
+            if normalized_key and normalized_key in normalized_blob:
+                return value
+            if key_tokens and all(token in normalized_blob.split() for token in key_tokens):
                 return value
         return ""
 
@@ -94,6 +156,17 @@ class RuleBasedEngine:
         if key == "full_name":
             name = " ".join([self.profile.first_name.strip(), self.profile.last_name.strip()]).strip()
             return name
+        if key == "college_name":
+            return self.profile.college_name.strip() or self.profile.university_name.strip()
+        if key == "degree_specialization":
+            direct_combo = self.profile.degree_specialization.strip()
+            if direct_combo:
+                return direct_combo
+            degree = self.profile.degree.strip()
+            specialization = self.profile.specialization.strip()
+            if degree and specialization:
+                return f"{degree} - {specialization}"
+            return degree or specialization
         return ""
 
 
@@ -227,6 +300,7 @@ class FallbackAPIEngine(BaseAIClient):
         self.config = config
         self.logger = logger
         self.session = requests.Session()
+        self.gemini_disabled_reason: str = ""
 
     def decide(self, field: FieldMetadata, profile: UserProfile) -> Decision:
         provider = self.config.fallback_provider.strip().lower()
@@ -304,6 +378,23 @@ class FallbackAPIEngine(BaseAIClient):
                 unique.append(candidate)
         return unique
 
+    @staticmethod
+    def _extract_error_message(response) -> str:
+        try:
+            payload = response.json()
+        except ValueError:
+            return response.text.strip() or f"HTTP {response.status_code}"
+
+        error = payload.get("error", {}) if isinstance(payload, dict) else {}
+        if isinstance(error, dict):
+            status = str(error.get("status", "")).strip()
+            message = str(error.get("message", "")).strip()
+            if status and message:
+                return f"{status}: {message}"
+            if message:
+                return message
+        return response.text.strip() or f"HTTP {response.status_code}"
+
     def _call_gemini(self, field: FieldMetadata, profile: UserProfile) -> Decision:
         api_key = os.getenv(self.config.gemini_api_key_env, "").strip()
         if not api_key:
@@ -314,6 +405,15 @@ class FallbackAPIEngine(BaseAIClient):
                 source="fallback_ai",
                 valid=False,
                 reason=f"Missing env var {self.config.gemini_api_key_env}",
+            )
+        if self.gemini_disabled_reason:
+            return Decision(
+                action="",
+                value="",
+                confidence=0.0,
+                source="fallback_ai",
+                valid=False,
+                reason=self.gemini_disabled_reason,
             )
 
         payload = {
@@ -342,18 +442,21 @@ class FallbackAPIEngine(BaseAIClient):
                 return decision
             except requests.HTTPError as exc:
                 status_code = exc.response.status_code if exc.response is not None else None
-                last_error = str(exc)
+                error_message = self._extract_error_message(exc.response) if exc.response is not None else str(exc)
+                last_error = error_message
                 if status_code == 404:
                     self.logger.info("Gemini model unavailable (%s), trying next candidate", model_name)
                     continue
-                self.logger.warning("Gemini fallback request failed (%s): %s", model_name, exc)
+                if status_code == 403:
+                    self.gemini_disabled_reason = error_message
+                self.logger.warning("Gemini fallback request failed (%s): %s", model_name, error_message)
                 return Decision(
                     action="",
                     value="",
                     confidence=0.0,
                     source="fallback_ai",
                     valid=False,
-                    reason=str(exc),
+                    reason=error_message,
                 )
             except requests.RequestException as exc:
                 self.logger.warning("Gemini fallback request failed (%s): %s", model_name, exc)

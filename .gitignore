@@ -5,6 +5,9 @@ __pycache__/
 # Virtual env
 venv/
 .env/
+.env
+.env.*
+!.env.example
 
 # Temp files
 .tmp/

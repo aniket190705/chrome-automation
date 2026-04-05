@@ -42,6 +42,22 @@ ollama serve
 python main.py --url "https://example.com/form" --user-data "user_data.json"
 ```
 
+## .env Support
+
+The app now loads environment variables from a local `.env` file before startup.
+Values in `.env` override the existing OS environment for this project run.
+
+Example `.env`:
+
+```bash
+GEMINI_API_KEY=your_gemini_key
+OPENAI_API_KEY=your_openai_key
+OLLAMA_MODEL=llama3.1:8b
+OLLAMA_ENDPOINT=http://localhost:11434/api/chat
+FALLBACK_PROVIDER=gemini
+FALLBACK_MODEL=gemini-2.5-flash
+```
+
 Useful options:
 
 ```bash
@@ -88,6 +104,8 @@ Important:
 - Close all regular Chrome windows first when using `--chrome-user-data-dir` to avoid profile lock issues.
 
 ## Environment Variables (Optional)
+
+These can be placed in `.env` or exported in the OS environment:
 
 - `OLLAMA_MODEL`
 - `OLLAMA_ENDPOINT`

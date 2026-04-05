@@ -456,3 +456,118 @@ Call log:
 2026-03-19 20:14:56 | INFO    | [7] field='Which HTML element is used to specify a footer? * Which HTML element is used to specify a footer? *<bottom><section><foo' kind='radio' source='fallback_ai' confidence=1.00 action='select' value='<footer>' applied=True
 2026-03-19 20:14:57 | INFO    | Captured screenshot: debug_screenshots\1773931497020_run_complete.png
 2026-03-19 20:14:57 | INFO    | Agent stopped
+2026-04-05 14:20:32 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 14:20:43 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-04-05 14:20:45 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 14:20:46 | INFO    | Captured screenshot: debug_screenshots\1775379045986_page_loaded.png
+2026-04-05 14:20:46 | INFO    | Page 1: detected 9 fields
+2026-04-05 14:20:47 | INFO    | [1] field='Name * First and last name' kind='text' source='rule' confidence=0.99 action='fill' value='Alex Johnson' applied=True
+2026-04-05 14:20:47 | INFO    | [2] field='Email * Your answer' kind='email' source='rule' confidence=0.99 action='fill' value='alex.johnson@example.com' applied=True
+2026-04-05 14:20:48 | INFO    | [3] field='Phone number * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='+1-555-111-2222' applied=True
+2026-04-05 14:20:49 | INFO    | [4] field='Name of your College/University * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Alex Johnson' applied=True
+2026-04-05 14:20:50 | WARNING | Gemini fallback request failed (gemini-2.5-flash): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-04-05 14:20:50 | INFO    | Primary API unresolved for field 'Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer' (valid=False confidence=0.00 reason=403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-04-05 14:21:39 | INFO    | [5] field='Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer' kind='text' source='local_ai' confidence=1.00 action='fill' value='MBA - Marketing' applied=True
+2026-04-05 14:21:40 | WARNING | Gemini fallback request failed (gemini-2.5-flash): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-04-05 14:21:40 | INFO    | Primary API unresolved for field 'Graduation Percentage or CGPA (Out of 10) * Your answer' (valid=False confidence=0.00 reason=403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-04-05 14:22:07 | INFO    | Local Ollama fallback unresolved for field 'Graduation Percentage or CGPA (Out of 10) * Your answer' (valid=False confidence=0.50 reason=Missing/invalid action or value)
+2026-04-05 14:22:07 | WARNING | [6] No decision for field: Graduation Percentage or CGPA (Out of 10) * Your answer
+2026-04-05 14:22:08 | WARNING | Gemini fallback request failed (gemini-2.5-flash): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-04-05 14:22:08 | INFO    | Primary API unresolved for field 'Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer' (valid=False confidence=0.00 reason=403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-04-05 14:22:39 | INFO    | [7] field='Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer' kind='text' source='local_ai' confidence=0.90 action='fill' value='8.5' applied=True
+2026-04-05 14:22:39 | WARNING | Gemini fallback request failed (gemini-2.5-flash): 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo
+2026-04-05 14:22:39 | INFO    | Primary API unresolved for field 'Do you have any active backlogs? * Do you have any active backlogs? *YesNo' (valid=False confidence=0.00 reason=403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCv6YhGIjN4-uRVL3SZt7WQ2FO4llP6Foo)
+2026-04-05 14:23:12 | INFO    | [8] field='Do you have any active backlogs? * Do you have any active backlogs? *YesNo' kind='radio' source='local_ai' confidence=0.80 action='select' value='Yes' applied=True
+2026-04-05 14:23:13 | INFO    | [9] field='Share Your LinkedIn Profile Link (If you don't have a LinkedIn Profile, Kindly Create and share the Link) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='https://www.linkedin.com/in/alexjohnson' applied=True
+2026-04-05 14:23:17 | INFO    | Captured screenshot: debug_screenshots\1775379193188_run_complete.png
+2026-04-05 14:23:17 | INFO    | Agent stopped
+2026-04-05 14:30:35 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 14:30:36 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-04-05 14:30:39 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 14:30:39 | INFO    | Captured screenshot: debug_screenshots\1775379639232_page_loaded.png
+2026-04-05 14:30:39 | INFO    | Page 1: detected 9 fields
+2026-04-05 14:30:40 | INFO    | [1] field='Name * First and last name' kind='text' source='rule' confidence=0.99 action='fill' value='Alex Johnson' applied=True
+2026-04-05 14:30:41 | INFO    | [2] field='Email * Your answer' kind='email' source='rule' confidence=0.99 action='fill' value='alex.johnson@example.com' applied=True
+2026-04-05 14:30:42 | INFO    | [3] field='Phone number * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='+1-555-111-2222' applied=True
+2026-04-05 14:30:43 | INFO    | [4] field='Name of your College/University * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Alex Johnson' applied=True
+2026-04-05 14:30:48 | INFO    | Primary API unresolved for field 'Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer' (valid=False confidence=0.00 reason=Missing/invalid action or value)
+2026-04-05 14:31:31 | INFO    | [5] field='Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer' kind='text' source='local_ai' confidence=1.00 action='fill' value='MBA - Marketing' applied=True
+2026-04-05 14:31:32 | INFO    | Primary API unresolved for field 'Graduation Percentage or CGPA (Out of 10) * Your answer' (valid=False confidence=0.00 reason=Missing/invalid action or value)
+2026-04-05 14:32:00 | INFO    | Local Ollama fallback unresolved for field 'Graduation Percentage or CGPA (Out of 10) * Your answer' (valid=False confidence=0.50 reason=Missing/invalid action or value)
+2026-04-05 14:32:00 | WARNING | [6] No decision for field: Graduation Percentage or CGPA (Out of 10) * Your answer
+2026-04-05 14:32:10 | INFO    | Primary API unresolved for field 'Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer' (valid=False confidence=0.00 reason=Missing/invalid action or value)
+2026-04-05 14:32:43 | INFO    | [7] field='Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer' kind='text' source='local_ai' confidence=0.90 action='fill' value='8.5' applied=True
+2026-04-05 14:32:51 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-04-05 14:32:51 | INFO    | Primary API unresolved for field 'Do you have any active backlogs? * Do you have any active backlogs? *YesNo' (valid=True confidence=0.01 reason=)
+2026-04-05 14:33:23 | INFO    | [8] field='Do you have any active backlogs? * Do you have any active backlogs? *YesNo' kind='radio' source='local_ai' confidence=0.80 action='select' value='Yes' applied=True
+2026-04-05 14:33:23 | INFO    | [9] field='Share Your LinkedIn Profile Link (If you don't have a LinkedIn Profile, Kindly Create and share the Link) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='https://www.linkedin.com/in/alexjohnson' applied=True
+2026-04-05 14:33:24 | INFO    | Captured screenshot: debug_screenshots\1775379803855_run_complete.png
+2026-04-05 14:33:24 | INFO    | Agent stopped
+2026-04-05 14:35:34 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 14:35:35 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-04-05 14:35:37 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 14:35:37 | INFO    | Captured screenshot: debug_screenshots\1775379937152_page_loaded.png
+2026-04-05 14:35:37 | INFO    | Page 1: detected 9 fields
+2026-04-05 14:35:37 | INFO    | [1] Skip pre-filled field: Name * First and last name
+2026-04-05 14:35:37 | INFO    | [2] Skip pre-filled field: Email * Your answer
+2026-04-05 14:35:37 | INFO    | [3] Skip pre-filled field: Phone number * Your answer
+2026-04-05 14:35:37 | INFO    | [4] Skip pre-filled field: Name of your College/University * Your answer
+2026-04-05 14:35:37 | INFO    | [5] Skip pre-filled field: Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer
+2026-04-05 14:35:38 | INFO    | [6] field='Graduation Percentage or CGPA (Out of 10) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='8.5' applied=True
+2026-04-05 14:35:38 | INFO    | [7] Skip pre-filled field: Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer
+2026-04-05 14:35:38 | INFO    | [8] Skip pre-filled field: Do you have any active backlogs? * Do you have any active backlogs? *YesNo
+2026-04-05 14:35:38 | INFO    | [9] Skip pre-filled field: Share Your LinkedIn Profile Link (If you don't have a LinkedIn Profile, Kindly Create and share the Link) * Your answer
+2026-04-05 14:35:38 | INFO    | Captured screenshot: debug_screenshots\1775379938630_run_complete.png
+2026-04-05 14:35:38 | INFO    | Agent stopped
+2026-04-05 19:40:38 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 19:40:50 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-04-05 19:40:52 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 19:40:52 | INFO    | Captured screenshot: debug_screenshots\1775398252507_page_loaded.png
+2026-04-05 19:40:53 | INFO    | Page 1: detected 9 fields
+2026-04-05 19:40:53 | INFO    | [1] field='Name * First and last name' kind='text' source='rule' confidence=0.99 action='fill' value='Aniket Sharma' applied=True
+2026-04-05 19:40:54 | INFO    | [2] field='Email * Your answer' kind='email' source='rule' confidence=0.99 action='fill' value='aniket190705@gmail.com' applied=True
+2026-04-05 19:40:55 | INFO    | [3] field='Phone number * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='+91 7814099589' applied=True
+2026-04-05 19:40:56 | INFO    | [4] field='Name of your College/University * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Global Academy of Technology' applied=True
+2026-04-05 19:40:57 | INFO    | [5] field='Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='B.E. - Computer Science and Engineering' applied=True
+2026-04-05 19:40:58 | INFO    | [6] field='Graduation Percentage or CGPA (Out of 10) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='9.0' applied=True
+2026-04-05 19:40:58 | INFO    | [7] field='Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='9.0' applied=True
+2026-04-05 19:40:59 | INFO    | [8] field='Do you have any active backlogs? * Do you have any active backlogs? *YesNo' kind='radio' source='rule' confidence=0.99 action='select' value='No' applied=True
+2026-04-05 19:41:00 | INFO    | [9] field='Share Your LinkedIn Profile Link (If you don't have a LinkedIn Profile, Kindly Create and share the Link) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='https://www.linkedin.com/in/aniketsharma1907/' applied=True
+2026-04-05 19:41:00 | INFO    | Captured screenshot: debug_screenshots\1775398260202_run_complete.png
+2026-04-05 19:41:00 | INFO    | Agent stopped
+2026-04-05 19:42:09 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLSffWla541MiQx5ze3qnJb9t_2v4VlBr50_LZe1tVcUpmppguQ/viewform
+2026-04-05 19:42:10 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-04-05 19:42:12 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLSffWla541MiQx5ze3qnJb9t_2v4VlBr50_LZe1tVcUpmppguQ/viewform
+2026-04-05 19:42:12 | INFO    | Captured screenshot: debug_screenshots\1775398332099_page_loaded.png
+2026-04-05 19:42:12 | INFO    | Page 1: detected 8 fields
+2026-04-05 19:42:13 | INFO    | [1] field='Full Name (eg. Anu Sharma) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Aniket Sharma' applied=True
+2026-04-05 19:42:14 | INFO    | [2] field='Email * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='aniket190705@gmail.com' applied=True
+2026-04-05 19:42:21 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-04-05 19:42:21 | INFO    | [3] field='Your answer What’s your best AI project *Your answer' kind='text' source='fallback_ai' confidence=0.90 action='fill' value='Developed a real-time object detection system for autonomous vehicles using YOLOv5, achieving high precision and recall ' applied=True
+2026-04-05 19:42:22 | INFO    | [4] field='Github Link to your project ( just 1) * Your answer' kind='text' source='rule' confidence=0.90 action='fill' value='https://github.com/aniket190705' applied=True
+2026-04-05 19:42:24 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-04-05 19:42:25 | INFO    | [5] field='Live demo link Your answer' kind='text' source='fallback_ai' confidence=0.90 action='fill' value='https://www.aniket.work/' applied=True
+2026-04-05 19:42:27 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-04-05 19:42:28 | INFO    | [6] field='Your answer What does your agent/workflow actually doYour answer' kind='text' source='fallback_ai' confidence=0.95 action='fill' value='My agent/workflow is designed to understand and process natural language instructions, extract relevant information from' applied=True
+2026-04-05 19:42:33 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-04-05 19:42:34 | INFO    | [7] field='Your answer What are the tools used? *Your answer' kind='text' source='fallback_ai' confidence=0.95 action='fill' value='Common tools include programming languages (Python, Java, C++), IDEs (VS Code, IntelliJ), version control systems (Git, ' applied=True
+2026-04-05 19:42:37 | INFO    | Gemini fallback model used: gemini-2.5-flash
+2026-04-05 19:42:38 | INFO    | [8] field='This is for hiring so, are you open to roles right now? * This is for hiring so, are you open to roles right now? *YesNo' kind='radio' source='fallback_ai' confidence=0.90 action='select' value='Yes' applied=True
+2026-04-05 19:42:38 | INFO    | Captured screenshot: debug_screenshots\1775398358523_run_complete.png
+2026-04-05 19:42:38 | INFO    | Agent stopped
+2026-04-05 20:19:30 | INFO    | Starting agent for URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 20:19:31 | INFO    | Connected to existing browser via CDP: http://127.0.0.1:9222
+2026-04-05 20:19:33 | INFO    | Loaded URL: https://docs.google.com/forms/d/e/1FAIpQLScSG30hm5FXDFFwLHHJoLNCOo3ta7YxAoj5SXRwLMh-6_jCYQ/viewform
+2026-04-05 20:19:34 | INFO    | Captured screenshot: debug_screenshots\1775400573851_page_loaded.png
+2026-04-05 20:19:34 | INFO    | Page 1: detected 9 fields
+2026-04-05 20:19:35 | INFO    | [1] field='Name * First and last name' kind='text' source='rule' confidence=0.99 action='fill' value='Aniket Sharma' applied=True
+2026-04-05 20:19:36 | INFO    | [2] field='Email * Your answer' kind='email' source='rule' confidence=0.99 action='fill' value='aniket190705@gmail.com' applied=True
+2026-04-05 20:19:37 | INFO    | [3] field='Phone number * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='+91 7814099589' applied=True
+2026-04-05 20:19:38 | INFO    | [4] field='Name of your College/University * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='Global Academy of Technology' applied=True
+2026-04-05 20:19:38 | INFO    | [5] field='Mention your Degree and area of Specialization (E.g: MBA - Marketing) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='B.E. - Computer Science and Engineering' applied=True
+2026-04-05 20:19:39 | INFO    | [6] field='Graduation Percentage or CGPA (Out of 10) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='9.0' applied=True
+2026-04-05 20:19:40 | INFO    | [7] field='Post Graduation Percentage or CGPA (Out of 10). If you are an Under Graduate Student, Write "NA". Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='9.0' applied=True
+2026-04-05 20:19:41 | INFO    | [8] field='Do you have any active backlogs? * Do you have any active backlogs? *YesNo' kind='radio' source='rule' confidence=0.99 action='select' value='No' applied=True
+2026-04-05 20:19:41 | INFO    | [9] field='Share Your LinkedIn Profile Link (If you don't have a LinkedIn Profile, Kindly Create and share the Link) * Your answer' kind='text' source='rule' confidence=0.99 action='fill' value='https://www.linkedin.com/in/aniketsharma1907/' applied=True
+2026-04-05 20:19:42 | INFO    | Captured screenshot: debug_screenshots\1775400581939_run_complete.png
+2026-04-05 20:19:42 | INFO    | Agent stopped
